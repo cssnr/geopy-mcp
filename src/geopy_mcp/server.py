@@ -1,5 +1,6 @@
 import asyncio
 import logging
+import os
 from typing import Annotated, Any
 
 from geopy.distance import geodesic  # type: ignore[import-untyped]
@@ -9,14 +10,18 @@ from mcp.server.transport_security import TransportSecuritySettings
 from pydantic import Field
 
 from ._version import __version__
+from .utils import str_to_bool
 
 logger = logging.getLogger(__name__)
+
 
 mcp = FastMCP(
     "geopy",
     json_response=True,
+    stateless_http=str_to_bool(os.environ.get("STATELESS_HTTP", "true")),
     transport_security=TransportSecuritySettings(enable_dns_rebinding_protection=False),
 )
+
 
 # noinspection PyProtectedMember
 mcp._mcp_server.version = __version__
