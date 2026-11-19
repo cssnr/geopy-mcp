@@ -4,7 +4,6 @@
 [![Image Size](https://badges.cssnr.com/ghcr/size/cssnr/geopy-mcp)](https://github.com/cssnr/geopy-mcp/pkgs/container/geopy-mcp)
 [![Deployment PyPi](https://img.shields.io/github/deployments/cssnr/geopy-mcp/pypi?logo=pypi&logoColor=white&label=pypi)](https://pypi.org/project/geopy-mcp/)
 [![Workflow Build](https://img.shields.io/github/actions/workflow/status/cssnr/geopy-mcp/build.yaml?logo=norton&logoColor=white&label=build)](https://github.com/cssnr/geopy-mcp/actions/workflows/build.yaml)
-[![Workflow Deploy](https://img.shields.io/github/actions/workflow/status/cssnr/geopy-mcp/deploy.yaml?logo=norton&logoColor=white&label=deploy)](https://github.com/cssnr/geopy-mcp/actions/workflows/deploy.yaml)
 [![Workflow Release](https://img.shields.io/github/actions/workflow/status/cssnr/geopy-mcp/release.yaml?logo=norton&logoColor=white&label=release)](https://github.com/cssnr/geopy-mcp/actions/workflows/release.yaml)
 [![GitHub Last Commit](https://img.shields.io/github/last-commit/cssnr/geopy-mcp?logo=listenhub&label=updated)](https://github.com/cssnr/geopy-mcp/pulse)
 [![GitHub Repo Size](https://img.shields.io/github/repo-size/cssnr/geopy-mcp?logo=buffer&label=repo%20size)](https://github.com/cssnr/geopy-mcp?tab=readme-ov-file#readme)
@@ -129,7 +128,7 @@ Note: Set the `url` to the host you are running the server on.
 
 For a Docker Swarm + Traefik example see the [docker-compose-swarm.yaml](https://github.com/cssnr/geopy-mcp/blob/master/docker-compose-swarm.yaml).
 
-For a Portainer Deploy workflow see the [.github/workflows/deploy.yaml](https://github.com/cssnr/geopy-mcp/blob/master/.github/workflows/deploy.yaml).
+The hosted instance at https://geopy-mcp.cssnr.com/ is deployed from [hosted-domains/docker-compose](https://github.com/hosted-domains/docker-compose/tree/main/cssnr-geopy-mcp) (private), not from this repository.
 
 ## Development<a id="development"></a>
 
